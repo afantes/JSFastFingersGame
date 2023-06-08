@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FastFingers Game</title>
+</head>
+
+<body>
+    <div class="game">
+        <h1 class="title">FastFingers Game</h1>
+        <div class="container">
+            <div class="difficulty">
+                <label for="difficulty">Choose Difficulty:</label>
+                <select id="difficulty">
+                    <option value="beginner">Beginner</option>
+                    <option value="medium">Medium</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+            <div class="message">
+                <p><span class="level"></span></p>
+                <p><span class="time"></span></p>
+            </div>
+            <button class="start">Start Playing</button>
+            <div class="word-to-type"></div>
+            <input type="text" class="input">
+            <div class="upcoming-words">Upcoming Words ...</div>
+            <div class="scoreboard">
+                <p>Time Left: <span class="time-left"></span> seconds</p>
+                <p>Score: <span class="score"></span></p>
+            </div>
+        </div>
+        <p class="game-duration hide">00:00</p>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
